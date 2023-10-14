@@ -5,7 +5,7 @@ resource "aws_instance" "tf_ec2" {
 
   user_data = file("userdata.sh")
 
-  vpc_security_group_ids = [data.aws_security_group.web_server.id]
+  // vpc_security_group_ids = [data.aws_security_group.web_server.id]
 
   tags = {
     Name = "Raja-EC2"
